@@ -19,15 +19,13 @@ def main():
     if len(sys.argv) > 1:
         # If yes, then set the first argument as the "name"
         name = sys.argv[1]
-    # Create the output string using f-string,
-    # which is a way to embed expressions inside string literals
+    # Create the output string using f-string, which is a way to embed expressions inside string literals
     output = f"Hello, {name}"
     # Call the "console_out" function and pass the "output" string as an argument
     console_out(output)
 
 
-# Define the "get_argument_as_string" function that takes one argument "arg" with default value of 1, and returns a
-# string
+# Define the "get_argument_as_string" function that takes one argument "arg" with default value of 1, and returns a string
 def get_argument_as_string(arg: int = 1) -> str:
     """
         Returns the argument passed through the command line as a string.
